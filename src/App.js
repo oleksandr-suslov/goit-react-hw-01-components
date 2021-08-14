@@ -1,8 +1,12 @@
 import Profile from "./components/profile/Profile";
+import Statistics from "./components/statistics/Statistics";
+import Friends from "./components/friends/Friends";
+import TransactionHistory from "./components/transactions/TransactionHistory";
 import "./App.css";
 import user from "./components/profile/user.json";
-import stats from "./components/statistics/statistics.json";
-import Statistics from "./components/statistics/Statistics";
+import friends from "./components/friends/friends.json";
+import statistics from "./components/statistics/statistics.json";
+import items from "./components/transactions/transactions.json";
 
 function App() {
   return (
@@ -14,7 +18,9 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title={stats.title} stats={stats.stats} />
+      <Statistics title="Upload stats" stats={statistics} />
+      <Friends friends={friends} />
+      <TransactionHistory items={items} />
     </div>
   );
 }
