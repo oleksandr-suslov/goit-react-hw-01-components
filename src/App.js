@@ -3,10 +3,10 @@ import Statistics from "./components/statistics/Statistics";
 import Friends from "./components/friends/Friends";
 import TransactionHistory from "./components/transactions/TransactionHistory";
 import "./App.css";
-import user from "./components/profile/user.json";
-import friends from "./components/friends/friends.json";
-import statistics from "./components/statistics/statistics.json";
-import items from "./components/transactions/transactions.json";
+import user from "./components/data/user.json";
+import friends from "./components/data/friends.json";
+import statistics from "./components/data/statistics.json";
+import items from "./components/data/transactions.json";
 
 function App() {
   return (

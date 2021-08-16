@@ -5,7 +5,7 @@ export default function Statistics({ title, stats }) {
   const colors = ["#004a19", " #007a79", "#c7cedf", "#976f4f", "#4d4a16"];
   return (
     <section className={styles.statistics}>
-      {title ? <h2 className={styles.title}>{title}</h2> : ""}
+      {title ? <h2 className={styles.title}>{title}</h2> : null}
 
       <ul className={styles.statList}>
         {stats.map((stat, index) => (
